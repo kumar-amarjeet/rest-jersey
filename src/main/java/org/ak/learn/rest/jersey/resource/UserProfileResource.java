@@ -37,7 +37,6 @@ public class UserProfileResource {
 	@GET
 	@Path("/{userid}")
 	public UserProfileModel getUserProfileById(@PathParam("userid") long userId) {
-		System.out.println("UserId is - " + userId);
 		return service.getUserProfile(userId);		
 	}
 	
@@ -49,7 +48,6 @@ public class UserProfileResource {
 	@PUT
 	@Path("/{userid}")
 	public UserProfileModel updateUserProfile(@PathParam("userid") long userId, UserProfileModel userProfile) {
-		System.out.println("UserId is - " + userId);
 		userProfile.setUserId(userId);
 		return service.updateUserProfile(userProfile);
 	}
@@ -57,7 +55,6 @@ public class UserProfileResource {
 	@DELETE
 	@Path("/{userid}")
 	public UserProfileModel removeUserProfile (@PathParam("userid") long userId) {
-		System.out.println("UserId is - " + userId);
 		return service.removeUserProfile(new UserProfileModel(userId, "", "", ""));
 	}
 }
