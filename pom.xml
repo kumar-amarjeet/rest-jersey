@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.ak.learn</groupId>
-    <artifactId>rest-jersey</artifactId>
+    <artifactId>rest-jersey-poc</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rest-jersey</name>
+    <name>rest-jersey-poc</name>
 
     <build>
-        <finalName>rest-jersey</finalName>
+        <finalName>rest-jersey-poc</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
